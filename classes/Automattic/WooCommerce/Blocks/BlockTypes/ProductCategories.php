@@ -1,0 +1,125 @@
+<?php
+
+namespace Automattic\WooCommerce\Blocks\BlockTypes;
+
+/**
+ * ProductCategories class.
+ */
+class ProductCategories extends \Automattic\WooCommerce\Blocks\BlockTypes\AbstractDynamicBlock
+{
+    /**
+     * Block name.
+     *
+     * @var string
+     */
+    protected $block_name = 'product-categories';
+    /**
+     * Default attribute values, should match what's set in JS `registerBlockType`.
+     *
+     * @var array
+     */
+    protected $defaults = array('hasCount' => true, 'hasEmpty' => false, 'isDropdown' => false, 'isHierarchical' => true);
+    /**
+     * Get block attributes.
+     *
+     * @return array
+     */
+    protected function get_attributes()
+    {
+    }
+    /**
+     * Render the Product Categories List block.
+     *
+     * @param array  $attributes Block attributes. Default empty array.
+     * @param string $content    Block content. Default empty string.
+     * @return string Rendered block type output.
+     */
+    public function render($attributes = array(), $content = '')
+    {
+    }
+    /**
+     * Get categories (terms) from the db.
+     *
+     * @param array $attributes Block attributes. Default empty array.
+     * @return array
+     */
+    protected function get_categories($attributes)
+    {
+    }
+    /**
+     * Build hierarchical tree of categories.
+     *
+     * @param array $categories List of terms.
+     * @return array
+     */
+    protected function build_category_tree($categories)
+    {
+    }
+    /**
+     * Build hierarchical tree of categories by appending children in the tree.
+     *
+     * @param array $categories List of terms.
+     * @param array $categories_by_parent List of terms grouped by parent.
+     * @return array
+     */
+    protected function fill_category_children($categories, $categories_by_parent)
+    {
+    }
+    /**
+     * Render the category list as a dropdown.
+     *
+     * @param array $categories List of terms.
+     * @param array $attributes Block attributes. Default empty array.
+     * @param int   $uid Unique ID for the rendered block, used for HTML IDs.
+     * @return string Rendered output.
+     */
+    protected function renderDropdown($categories, $attributes, $uid)
+    {
+    }
+    /**
+     * Render dropdown options list.
+     *
+     * @param array $categories List of terms.
+     * @param array $attributes Block attributes. Default empty array.
+     * @param int   $uid Unique ID for the rendered block, used for HTML IDs.
+     * @param int   $depth Current depth.
+     * @return string Rendered output.
+     */
+    protected function renderDropdownOptions($categories, $attributes, $uid, $depth = 0)
+    {
+    }
+    /**
+     * Render the category list as a list.
+     *
+     * @param array $categories List of terms.
+     * @param array $attributes Block attributes. Default empty array.
+     * @param int   $uid Unique ID for the rendered block, used for HTML IDs.
+     * @param int   $depth Current depth.
+     * @return string Rendered output.
+     */
+    protected function renderList($categories, $attributes, $uid, $depth = 0)
+    {
+    }
+    /**
+     * Render a list of terms.
+     *
+     * @param array $categories List of terms.
+     * @param array $attributes Block attributes. Default empty array.
+     * @param int   $uid Unique ID for the rendered block, used for HTML IDs.
+     * @param int   $depth Current depth.
+     * @return string Rendered output.
+     */
+    protected function renderListItems($categories, $attributes, $uid, $depth = 0)
+    {
+    }
+    /**
+     * Get the count, if displaying.
+     *
+     * @param object $category Term object.
+     * @param array  $attributes Block attributes. Default empty array.
+     * @return string
+     */
+    protected function getCount($category, $attributes)
+    {
+    }
+}
