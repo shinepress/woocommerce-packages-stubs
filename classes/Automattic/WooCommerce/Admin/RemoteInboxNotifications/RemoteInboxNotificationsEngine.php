@@ -1,0 +1,62 @@
+<?php
+
+namespace Automattic\WooCommerce\Admin\RemoteInboxNotifications;
+
+/**
+ * Remote Inbox Notifications engine.
+ * This goes through the specs and runs (creates admin notes) for those
+ * specs that are able to be triggered.
+ */
+class RemoteInboxNotificationsEngine
+{
+    const SPECS_OPTION_NAME = 'wc_remote_inbox_notifications_specs';
+    const STORED_STATE_OPTION_NAME = 'wc_remote_inbox_notifications_stored_state';
+    /**
+     * Initialize the engine.
+     */
+    public static function init()
+    {
+    }
+    /**
+     * Init is continued via admin_init so that WC is loaded when the product
+     * query is used, otherwise the query generates a "0 = 1" in the WHERE
+     * condition and thus doesn't return any results.
+     */
+    public static function on_admin_init()
+    {
+    }
+    /**
+     * Go through the specs and run them.
+     */
+    public static function run()
+    {
+    }
+    /**
+     * Gets the stored state option, and does the initial set up if it doesn't
+     * already exist.
+     *
+     * @return object The stored state option.
+     */
+    public static function get_stored_state()
+    {
+    }
+    /**
+     * The deactivated_plugin hook happens before the option is updated
+     * (https://github.com/WordPress/WordPress/blob/master/wp-admin/includes/plugin.php#L826)
+     * so this captures the deactivated plugin path and pushes it into the
+     * PluginsProvider.
+     *
+     * @param string $plugin Path to the plugin file relative to the plugins directory.
+     */
+    public static function run_on_deactivated_plugin($plugin)
+    {
+    }
+    /**
+     * Update the stored state option.
+     *
+     * @param object $stored_state The stored state.
+     */
+    public static function update_stored_state($stored_state)
+    {
+    }
+}
