@@ -1,0 +1,48 @@
+<?php
+
+namespace Automattic\WooCommerce\Blocks\StoreApi\Routes;
+
+/**
+ * CartCouponsByCode class.
+ *
+ * @internal This API is used internally by Blocks--it is still in flux and may be subject to revisions.
+ */
+class CartCouponsByCode extends \Automattic\WooCommerce\Blocks\StoreApi\Routes\AbstractRoute
+{
+    /**
+     * Get the path of this REST route.
+     *
+     * @return string
+     */
+    public function get_path()
+    {
+    }
+    /**
+     * Get method arguments for this REST route.
+     *
+     * @return array An array of endpoints.
+     */
+    public function get_args()
+    {
+    }
+    /**
+     * Get a single cart coupon.
+     *
+     * @throws RouteException On error.
+     * @param \WP_REST_Request $request Request object.
+     * @return \WP_REST_Response
+     */
+    protected function get_route_response(\WP_REST_Request $request)
+    {
+    }
+    /**
+     * Delete a single cart coupon.
+     *
+     * @throws RouteException On error.
+     * @param \WP_REST_Request $request Request object.
+     * @return \WP_REST_Response
+     */
+    protected function get_route_delete_response(\WP_REST_Request $request)
+    {
+    }
+}
