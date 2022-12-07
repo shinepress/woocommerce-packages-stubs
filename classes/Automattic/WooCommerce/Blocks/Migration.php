@@ -1,0 +1,35 @@
+<?php
+
+namespace Automattic\WooCommerce\Blocks;
+
+/**
+ * Takes care of the migrations.
+ *
+ * @since 2.5.0
+ */
+class Migration
+{
+    /**
+     * DB updates and callbacks that need to be run per version.
+     *
+     * Please note that these functions are invoked when WooCommerce Blocks is updated from a previous version,
+     * but NOT when WooCommerce Blocks is newly installed.
+     *
+     * @var array
+     */
+    private $db_upgrades = array();
+    /**
+     * Runs all the necessary migrations.
+     *
+     * @var array
+     */
+    public function run_migrations()
+    {
+    }
+    /**
+     * Set a flag to indicate if the blockified Product Grid Block should be rendered by default.
+     */
+    public static function wc_blocks_update_710_blockified_product_grid_block()
+    {
+    }
+}
