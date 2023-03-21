@@ -1,0 +1,112 @@
+<?php
+
+namespace Automattic\WooCommerce\Blocks\Shipping;
+
+/**
+ * ShippingController class.
+ *
+ * @internal
+ */
+class ShippingController
+{
+    /**
+     * Instance of the asset API.
+     *
+     * @var AssetApi
+     */
+    protected $asset_api;
+    /**
+     * Instance of the asset data registry.
+     *
+     * @var AssetDataRegistry
+     */
+    protected $asset_data_registry;
+    /**
+     * Constructor.
+     *
+     * @param AssetApi          $asset_api Instance of the asset API.
+     * @param AssetDataRegistry $asset_data_registry Instance of the asset data registry.
+     */
+    public function __construct(\Automattic\WooCommerce\Blocks\Assets\Api $asset_api, \Automattic\WooCommerce\Blocks\Assets\AssetDataRegistry $asset_data_registry)
+    {
+    }
+    /**
+     * Initialization method.
+     */
+    public function init()
+    {
+    }
+    /**
+     * Gets a list of payment method ids that support the 'local-pickup' feature.
+     *
+     * @return string[] List of payment method ids that support the 'local-pickup' feature.
+     */
+    public function get_local_pickup_method_ids()
+    {
+    }
+    /**
+     * Register Local Pickup settings for rest api.
+     */
+    public function register_settings()
+    {
+    }
+    /**
+     * Hydrate client settings
+     */
+    public function hydrate_client_settings()
+    {
+    }
+    /**
+     * Load admin scripts.
+     */
+    public function admin_scripts()
+    {
+    }
+    /**
+     * Registers the Local Pickup shipping method used by the Checkout Block.
+     */
+    public function register_local_pickup()
+    {
+    }
+    /**
+     * Declares the Pickup Location shipping method as a Local Pickup method for WooCommerce.
+     *
+     * @param array $methods Shipping method ids.
+     * @return array
+     */
+    public function register_local_pickup_method($methods)
+    {
+    }
+    /**
+     * Everytime we save or update local pickup settings, we flush the shipping
+     * transient group.
+     *
+     * @param array $settings The setting array we're saving.
+     * @return array $settings The setting array we're saving.
+     */
+    public function flush_cache($settings)
+    {
+    }
+    /**
+     * Filter the location used for taxes based on the chosen pickup location.
+     *
+     * @param array $address Location args.
+     * @return array
+     */
+    public function filter_taxable_address($address)
+    {
+    }
+    /**
+     * Local Pickup requires all packages to support local pickup. This is because the entire order must be picked up
+     * so that all packages get the same tax rates applied during checkout.
+     *
+     * If a shipping package does not support local pickup (e.g. if disabled by an extension), this filters the option
+     * out for all packages. This will in turn disable the "pickup" toggle in Block Checkout.
+     *
+     * @param array $packages Array of shipping packages.
+     * @return array
+     */
+    public function filter_shipping_packages($packages)
+    {
+    }
+}
