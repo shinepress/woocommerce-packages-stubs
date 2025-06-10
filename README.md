@@ -1,4 +1,4 @@
-# shinepress/woocommerce-package-stubs
+# shinepress/woocommerce-packages-stubs
 
 [![Latest Version](https://img.shields.io/packagist/v/shinepress/woocommerce-packages-stubs?label=latest)](https://packagist.org/packages/shinepress/woocommerce-packages-stubs/)
 [![Downloads](https://img.shields.io/packagist/dt/shinepress/woocommerce-packages-stubs?label=downloads)](https://packagist.org/packages/shinepress/woocommerce-packages-stubs/)
