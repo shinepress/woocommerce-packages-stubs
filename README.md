@@ -1,13 +1,13 @@
 # shinepress/woocommerce-package-stubs
 
-[![Latest Version](https://img.shields.io/packagist/v/shinepress/woocommerce-package-stubs?label=latest)](https://packagist.org/packages/shinepress/woocommerce-package-stubs/)
-[![Downloads](https://img.shields.io/packagist/dt/shinepress/woocommerce-package-stubs?label=downloads)](https://packagist.org/packages/shinepress/woocommerce-package-stubs/)
+[![Latest Version](https://img.shields.io/packagist/v/shinepress/woocommerce-packages-stubs?label=latest)](https://packagist.org/packages/shinepress/woocommerce-packages-stubs/)
+[![Downloads](https://img.shields.io/packagist/dt/shinepress/woocommerce-packages-stubs?label=downloads)](https://packagist.org/packages/shinepress/woocommerce-packages-stubs/)
 
 ## Installation
 
 The recommendend installation method is with composer:
 ```sh
-$ composer require shinepress/woocommerce-package-stubs
+$ composer require shinepress/woocommerce-packages-stubs
 ```
 
 ## Usage
@@ -16,7 +16,7 @@ Just register the autoloader as a bootstrap file in your phpstan config:
 ```yaml
 parameters:
     bootstrapFiles:
-        - ./vendor/shinepress/woocommerce-package-stubs/autoload.php
+        - ./vendor/shinepress/woocommerce-packages-stubs/autoload.php
 ```
 
 ## Attribution
