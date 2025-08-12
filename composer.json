@@ -1,0 +1,12 @@
+{
+	"name": "shinepress/woocommerce-packages-stubs",
+	"type": "library",
+	"license": "MIT",
+	"description": "WooCommerce packages function and class declaration stubs for static analysis split into multiple files for increased performance.",
+	"keywords": [
+		"woocommerce",
+		"wordpress",
+		"static analysis",
+		"phpstan"
+	]
+}
